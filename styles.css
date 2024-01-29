@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.bubble {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Bubble color */
+    border-radius: 50%;
+    position: relative;
+}
+
+.bubble::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff; /* Highlight color */
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}
